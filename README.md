@@ -1,12 +1,15 @@
-# Arteris
+# Arteris — publicação na Hostinger
 
-Site HTML estático para publicação na Hostinger.
+O site é HTML estático, **não é WordPress** e não deve ser enviado pelo serviço de migração/importação automática.
 
-## Estrutura
-O `index.html` deve ficar na raiz do repositório e também diretamente em `public_html/` na Hostinger. Preserve os diretórios `Fotos/` e `Rota28/`.
+## Publicar
+1. Abra hPanel → Arquivos → Gerenciador de Arquivos.
+2. Acesse `public_html/` do domínio correto.
+3. Faça backup de arquivos antigos e remova a versão anterior.
+4. Envie `Arteris_SITE_PUBLICAR_Hostinger.zip`, extraia **dentro de `public_html`**.
+5. Confira que `public_html/index.html`, `public_html/slide1.html`, `public_html/Fotos/` e `public_html/Rota28/` existem. **Não** deve existir uma pasta intermediária `Arteris/`.
+6. Visite `https://seu-dominio/` e `https://seu-dominio/slide1.html`.
 
-## Segurança
-O material original inclui contratos e outros documentos. Não publique a pasta `Contratos/` neste repositório público. Revise as fotografias antes da publicação.
+O pacote contém `.htaccess` com `DirectoryIndex index.html`. **Não publicar** pastas de contratos/documentos confidenciais em um site público. Revise fotografias e informações pessoais antes de expor.
 
-## Deploy
-Depois de extrair o pacote preparado `arteris_github_site.zip`, envie os arquivos e pastas para este repositório, mantendo a estrutura original. Para publicar na Hostinger, envie esse mesmo conteúdo para `public_html/`.
+O ZIP pronto para Hostinger foi entregue no chat e ainda precisa ser enviado à hospedagem. O repositório ainda não contém todos os ativos do site.
